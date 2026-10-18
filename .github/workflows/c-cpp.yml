@@ -16,7 +16,7 @@ jobs:
       uses: actions/checkout@v4
     - name: run testcase
       run: |
-        g++ -std=c++17 "Bit Sequence/solution.cpp" -o solution
+        g++ -std=c++17 "./Bit Sequence/solution.cpp" -o solution
 
         # Testcase 1: Kiểm tra trực tiếp dữ liệu đầu vào và kết quả đầu ra
         echo "1010101" | ./solution > output.txt
